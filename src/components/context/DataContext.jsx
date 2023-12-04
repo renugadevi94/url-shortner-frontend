@@ -28,7 +28,9 @@ export const DataProvider = ({ children }) => {
       setToken(user.token);
     }
   }, []);
+
   // handle sign in
+
   const handleSignIn = async (e) => {
     e.preventDefault();
     const userData = {
@@ -75,7 +77,8 @@ export const DataProvider = ({ children }) => {
     localStorage.clear();
   };
 
-  // handle sign up
+  // handle signup
+
   const handleSignUp = async (e) => {
     e.preventDefault();
     const userData = {
@@ -100,6 +103,7 @@ export const DataProvider = ({ children }) => {
   };
 
   // handle forgot password
+
   const handleForgot = async (e) => {
     e.preventDefault();
     try {
@@ -114,7 +118,8 @@ export const DataProvider = ({ children }) => {
     }
   };
 
-  // handle password reset
+  // handle passwordreset
+
   const handleReset = async (e) => {
     e.preventDefault();
     if (password === cPassword) {
