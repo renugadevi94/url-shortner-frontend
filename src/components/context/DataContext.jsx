@@ -141,10 +141,11 @@ export const DataProvider = ({ children }) => {
 
 
   // handle account confirming
-  const handleConfirm = (e) => {
+ 
+  const handleConfirm = async (e) => {
     e.preventDefault();
     try {
-      api.patch(`/user/confirm/${resetToken}`);
+      await api.patch(`/user/confirm/${resetToken}`);
       navigate("/");
       toast.success("Account confirmed Successfully");
     } catch (error) {
