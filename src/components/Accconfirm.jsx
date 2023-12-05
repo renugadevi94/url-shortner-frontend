@@ -18,7 +18,7 @@ const Accconfirm = () => {
         <h2 className="display-6 text-center">Confirm account</h2>
   
         <button type="submit" className="btn mt-3 btn-primary">
-          Click here to confim account
+          Click here to confirm account
         </button>
       </form>
     );
