@@ -76,7 +76,7 @@ const Loggedin = ({
           
         </button>
       </nav>
-      <header className="bg-dark py-1">
+      <header className="bg-gray py-1">
         <p className="lead fw-normal text-center text-white-50 mb-0">
           Welcome back {loggedUser} !!!
         </p>
@@ -94,7 +94,7 @@ const Loggedin = ({
                     target="_blank"
                     className=" d-flex align-items-center gap-2"
                   >
-                    <button className="btn btn-success">
+                    <button className="btn btn-primary">
                       Short URL : {e.shorturl}
                     </button>{" "}
                     
@@ -105,7 +105,7 @@ const Loggedin = ({
                     target="_blank"
                     className=" d-flex align-items-center gap-2"
                   >
-                    <button className="btn btn-warning">
+                    <button className="btn btn-danger">
                       long URL : {e.longurl}
                     </button>
                     

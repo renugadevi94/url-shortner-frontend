@@ -82,7 +82,7 @@ ul {
   grid-template-columns: 1fr;
 }
 .customList {
-  background-color: #4b0dba;
+  background-color: lightskyblue;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -91,7 +91,7 @@ ul {
   border-radius: 5px !important;
 }
 .customList a {
-  color: #fff;
+  color:red;
   text-decoration: none;
 }
 button {
