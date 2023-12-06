@@ -5,7 +5,6 @@ import './index.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { BrowserRouter } from "react-router-dom";
-import { DataProvider } from './components/context/DataContext.jsx';
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from 'react-toastify';
 
@@ -13,10 +12,8 @@ import { ToastContainer } from 'react-toastify';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
   <React.StrictMode>
-    <DataProvider>
-    <App />
+     <App />
     <ToastContainer position="top-right" autoClose={5000} />
-    </DataProvider>
-  </React.StrictMode>
+    </React.StrictMode>
   </BrowserRouter>
 )
